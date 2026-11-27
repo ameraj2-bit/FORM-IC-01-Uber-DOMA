@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper]{article}
+
+% ---------- Paquetes ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish]{babel}
+\usepackage{csquotes}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{graphicx}
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[hidelinks]{hyperref}
+
+\addbibresource{referencias.bib}
+
+\begin{document}
+
+% ---------- Carátula ----------
+\begin{titlepage}
+  \centering
+  % \includegraphics[width=4cm]{capturas/logo-uteq.png}\\[1cm]
+  {\large\bfseries UNIVERSIDAD TÉCNICA ESTATAL DE QUEVEDO\par}
+  \vspace{0.3cm}
+  {\large Facultad de Ciencias de la Computación\par}
+  \vspace{0.2cm}
+  {\large Carrera de Ingeniería de Software\par}
+  \vspace{2cm}
+  {\Large\bfseries FORM-IC-01\par}
+  \vspace{0.4cm}
+  {\Large Investigación individual: arquitecturas distribuidas en la industria\par}
+  \vspace{0.6cm}
+  {\large\itshape Caso de estudio: la arquitectura de microservicios orientada a dominios (DOMA) de Uber\par}
+  \vfill
+  \begin{tabular}{rl}
+    \textbf{Asignatura:} & Aplicaciones Distribuidas \\
+    \textbf{Estudiante:} & Mera Jumbo Allison Michelle \\
+    \textbf{Docente:}    & Dr. Gleiston Cicerón Guerrero Ulloa \\
+    \textbf{Nivel:}      & Séptimo nivel, paralelo A \\
+  \end{tabular}
+  \vspace{1.5cm}
+
+  {\large Quevedo, noviembre de 2026\par}
+\end{titlepage}
+
+% ---------- Análisis (máximo 1 página) ----------
+\section*{1. Descripción del caso}
+% Qué empresa, qué sistema y a qué escala, con cifras citadas.
+% Ejemplo de cita: \cite{uber2020doma}
+
+\section*{2. Por qué eligió este estilo y qué tenía antes}
+% El monolito inicial, los problemas al crecer y el paso a microservicios y luego a DOMA.
+
+\section*{3. Beneficios obtenidos}
+% Datos medibles que da la fuente.
+
+\section*{4. Desafíos y cómo los resolvió}
+% Complejidad de miles de microservicios, depuración, etc., y cómo DOMA los atacó.
+
+\section*{5. Aplicación al PFC}
+% Qué se tomaría para el sistema del CRTV y qué no, y por qué.
+
+% ---------- Referencias ----------
+\newpage
+\printbibliography[title={Referencias}]
+
+% ---------- Anexo: evidencias de autoría ----------
+\newpage
+\section*{Anexo A. Evidencias de autoría}
+
+\subsection*{A.1 Captura de la fuente principal anotada}
+% Cuando tengas la imagen en capturas/, quita los % de las líneas de abajo:
+% \begin{figure}[h]
+%   \centering
+%   \includegraphics[width=\textwidth]{capturas/uber-blog-anotado.png}
+%   \caption{Fragmentos subrayados del artículo oficial de Uber.}
+% \end{figure}
+
+\subsection*{A.2 Ejemplo de primera mano}
+% Un sistema que uses o conozcas en el que reconozcas microservicios.
+
+\subsection*{A.3 Declaración de uso de inteligencia artificial}
+% Qué herramienta usaste, para qué y qué partes son de tu autoría.
+
+\end{document}
